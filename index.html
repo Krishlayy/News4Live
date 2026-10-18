@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News 4 Live — Production Hindi News Android App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Rozha+One&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #090d16;
+      color: #f1f5f9;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .hindi-title { font-family: 'Rozha One', serif; }
+    .glass {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glow-red {
+      box-shadow: 0 0 50px -10px rgba(220, 38, 38, 0.3);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-red-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="glass sticky top-0 z-30 px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="news4live_icon_512x512.png" alt="News 4 Live Icon" class="w-10 h-10 rounded-xl shadow-lg shadow-red-600/30 object-cover">
+      <div>
+        <h1 class="text-lg font-bold text-white flex items-center gap-2">
+          News 4 Live
+          <span class="text-xs bg-red-600/20 text-red-400 font-mono px-2 py-0.5 rounded border border-red-500/30">Android Native</span>
+          <span class="text-xs bg-emerald-500/20 text-emerald-400 font-mono px-2 py-0.5 rounded border border-emerald-500/30">Vercel Showcase</span>
+        </h1>
+        <p class="text-xs text-slate-400">Kotlin 2.0 · Jetpack Compose · Room Offline DB · WordPress REST API</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://github.com/Krishlayy/News4Live" target="_blank" class="flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-xs px-3.5 py-2 rounded-xl border border-slate-700 text-slate-200 transition">
+        <i class="fa-brands fa-github text-sm"></i>
+        <span>GitHub Codebase</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-6xl w-full mx-auto px-6 pt-12 pb-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <!-- Left Hero Copy -->
+    <div class="lg:col-span-7 space-y-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-red-600/10 border border-red-500/30 text-red-400 text-xs font-semibold">
+        <i class="fa-solid fa-tower-broadcast animate-pulse"></i> Real-Time News Delivery · 5,500+ Published Articles
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black text-white leading-tight tracking-tight">
+        Next-Gen Hindi News App Built With <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-400">Jetpack Compose</span>
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+        Engineered for rapid, low-latency news consumption across Indian network conditions. Features infinite pagination, instant offline bookmarks, breaking news tickers, and seamless dynamic CMS integration with WordPress.
+      </p>
+
+      <!-- Key Metrics Badges -->
+      <div class="grid grid-cols-3 gap-3 pt-2">
+        <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <div class="text-xl sm:text-2xl font-black text-white font-mono">100%</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Kotlin + Compose</div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <div class="text-xl sm:text-2xl font-black text-emerald-400 font-mono">&lt; 300ms</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Cache Hit Latency</div>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <div class="text-xl sm:text-2xl font-black text-red-400 font-mono">Offline</div>
+          <div class="text-[11px] text-slate-400 mt-0.5">Room Persistence</div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="https://github.com/Krishlayy/News4Live" target="_blank" class="px-6 py-3.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-sm shadow-lg shadow-red-600/30 transition flex items-center gap-2">
+          <i class="fa-brands fa-android text-base"></i>
+          Explore Source on GitHub
+        </a>
+        <a href="#screenshots" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-sm border border-slate-700 transition flex items-center gap-2">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          Interactive Mockup Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Mockup Visualizer -->
+    <div id="screenshots" class="lg:col-span-5 flex justify-center">
+      <div class="relative w-[300px] sm:w-[320px] bg-slate-950 p-3 rounded-[40px] border-4 border-slate-800 shadow-2xl glow-red">
+        <!-- Phone Camera Notch / Dynamic Island -->
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-black rounded-full z-20 flex items-center justify-center">
+          <div class="w-2.5 h-2.5 bg-slate-900 rounded-full"></div>
+        </div>
+        
+        <!-- Screen Content -->
+        <div class="relative w-full aspect-[9/19] rounded-[30px] overflow-hidden bg-slate-900 border border-slate-800">
+          <img id="mockupImage" src="news4live_screenshot_1_home.png" alt="App Screen" class="w-full h-full object-cover transition-opacity duration-300">
+        </div>
+
+        <!-- Screenshot Controls -->
+        <div class="flex items-center justify-around mt-4 px-2">
+          <button onclick="setScreen('news4live_screenshot_1_home.png', 'Home Feed', this)" class="screen-btn text-xs px-2.5 py-1.5 rounded-lg bg-red-600 text-white font-medium">Home Feed</button>
+          <button onclick="setScreen('news4live_screenshot_2_reader.png', 'Article Reader', this)" class="screen-btn text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">Article Reader</button>
+          <button onclick="setScreen('news4live_screenshot_3_categories.png', 'Categories', this)" class="screen-btn text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700">Categories</button>
+        </div>
+        <p id="screenCaption" class="text-center text-[11px] text-slate-400 mt-2 font-mono">Viewing: Home Feed & Breaking Ticker</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Feature Highlights -->
+  <section class="max-w-6xl w-full mx-auto px-6 py-12 border-t border-slate-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <h3 class="text-2xl font-bold text-white">Full-Stack Mobile Architecture</h3>
+      <p class="text-xs sm:text-sm text-slate-400 mt-2">Engineered strictly following Google Android modern architecture guidelines (MVI/MVVM, StateFlow, Coroutines).</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass p-6 rounded-2xl space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/30 flex items-center justify-center text-red-400 text-lg">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h4 class="font-bold text-white text-base">Jetpack Compose UI & Material 3</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Zero legacy XML layouts. Declarative UI built with custom Compose theme tokens, dynamic light/dark mode adaptation, and fluid typography tuned for Devanagari Hindi text.
+        </p>
+      </div>
+
+      <div class="glass p-6 rounded-2xl space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 text-lg">
+          <i class="fa-solid fa-hard-drive"></i>
+        </div>
+        <h4 class="font-bold text-white text-base">Room Database & Offline Persistence</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Local SQLite abstraction with TypeConverters. Allows users to bookmark articles for complete offline reading without network connectivity.
+        </p>
+      </div>
+
+      <div class="glass p-6 rounded-2xl space-y-3">
+        <div class="w-10 h-10 rounded-xl bg-amber-600/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h4 class="font-bold text-white text-base">OkHttp 50MB Cache & Paging 3</h4>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Zero duplicate network requests. Infinite scrolling across 1,100+ WordPress archive pages with OkHttp disk caching and automatic stale-while-revalidate headers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-6 px-6 text-center text-xs text-slate-500 mt-auto">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>News 4 Live Android Application · Developed by <strong class="text-slate-300 font-semibold">Kishalay Sharma</strong></p>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/Krishlayy/News4Live" class="hover:text-red-400 transition">GitHub Codebase</a>
+        <a href="https://github.com/Krishlayy" class="hover:text-red-400 transition">GitHub Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function setScreen(src, label, btn) {
+      const img = document.getElementById('mockupImage');
+      img.style.opacity = '0';
+      setTimeout(() => {
+        img.src = src;
+        img.style.opacity = '1';
+        document.getElementById('screenCaption').innerText = `Viewing: ${label}`;
+      }, 150);
+
+      document.querySelectorAll('.screen-btn').forEach(b => {
+        b.className = 'screen-btn text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+      });
+      btn.className = 'screen-btn text-xs px-2.5 py-1.5 rounded-lg bg-red-600 text-white font-medium';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.gradle
+.idea
+.kotlin
+app
+gradle
+wp-plugin
+*.dump
+*.apk
+*.aab
+*.zip
+*.keystore
+local.properties

@@ -1,5 +1,10 @@
 # News 4 Live — Production Hindi News Android Application
 
+[![Vercel Showcase](https://img.shields.io/badge/Vercel-Live_Showcase-black?style=flat&logo=vercel)](https://news4live-showcase.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-News4Live-blue?style=flat&logo=github)](https://github.com/Krishlayy/News4Live)
+
+> **Live Interactive Showcase**: [https://news4live-showcase.vercel.app](https://news4live-showcase.vercel.app)
+
 A production-ready, native Android news application engineered for modern Indian mobile users (Hindi-first typography, fast loading over 3G/4G/5G/Wi-Fi, offline caching, and responsive UI) powered directly by your existing WordPress website (`https://news4live.com/`) via the WordPress REST API and companion WordPress plugin.
 
 ---
