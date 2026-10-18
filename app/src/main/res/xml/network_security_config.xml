@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Enforce HTTPS across all network calls -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Specific domain config for news4live.com and subdomains -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">news4live.com</domain>
+        <domain includeSubdomains="true">wp.com</domain>
+        <domain includeSubdomains="true">gravatar.com</domain>
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

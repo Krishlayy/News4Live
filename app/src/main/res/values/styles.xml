@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.News4Live" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary_red</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <!-- Branded Splash Screen Theme (Android 12+ SplashScreen API compat) -->
+    <style name="Theme.News4Live.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary_red</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.News4Live</item>
+    </style>
+</resources>

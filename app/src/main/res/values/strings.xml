@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">News 4 Live</string>
+    <string name="app_tagline">ताज़ा, सटीक और निष्पक्ष समाचार</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_categories">कैटेगरी</string>
+    <string name="nav_search">सर्च</string>
+    <string name="nav_bookmarks">सेव की गई</string>
+    <string name="nav_more">अन्य</string>
+
+    <!-- Home Sections -->
+    <string name="section_breaking_news">ब्रेकिंग न्यूज़</string>
+    <string name="section_top_stories">प्रमुख खबरें</string>
+    <string name="section_latest_news">ताज़ा खबरें</string>
+    <string name="section_trending">ट्रेंडिंग</string>
+    <string name="section_related_news">संबंधित खबरें</string>
+    <string name="all_categories">सभी श्रेणियां</string>
+    <string name="view_all">सभी देखें</string>
+
+    <!-- Article Detail -->
+    <string name="published_on">प्रकाशित:</string>
+    <string name="updated_on">अपडेटेड:</string>
+    <string name="author_default">न्यूज़ 4 लाइव टीम</string>
+    <string name="share_article">शेयर करें</string>
+    <string name="bookmark_article">बुकमार्क</string>
+    <string name="bookmark_saved">खबर सेव कर ली गई है</string>
+    <string name="bookmark_removed">खबर बुकमार्क से हटा दी गई</string>
+    <string name="font_size">फॉन्ट साइज़</string>
+    <string name="font_size_small">छोटा</string>
+    <string name="font_size_medium">मध्यम</string>
+    <string name="font_size_large">बड़ा</string>
+    <string name="font_size_extra_large">बहुत बड़ा</string>
+
+    <!-- Search -->
+    <string name="search_hint">खबरें, विषय या कीवर्ड खोजें...</string>
+    <string name="recent_searches">हालिया खोजें</string>
+    <string name="clear_history">इतिहास साफ़ करें</string>
+    <string name="no_search_results">कोई खबर नहीं मिली</string>
+    <string name="search_suggestions">सुझाव</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmarks_title">आपकी सेव की गई खबरें</string>
+    <string name="bookmarks_empty_title">कोई सेव की गई खबर नहीं है</string>
+    <string name="bookmarks_empty_desc">किसी भी खबर को बाद में ऑफ़लाइन पढ़ने के लिए बुकमार्क आइकन पर टैप करें।</string>
+
+    <!-- Error & States -->
+    <string name="error_network_title">इंटरनेट कनेक्शन नहीं है</string>
+    <string name="error_network_desc">कृपया अपना डेटा या वाई-फाई कनेक्शन चेक करें और पुनः प्रयास करें।</string>
+    <string name="error_server_title">खबरें लोड नहीं हो सकीं</string>
+    <string name="error_server_desc">सर्वर से कनेक्ट करने में समस्या आई। कुछ देर बाद प्रयास करें।</string>
+    <string name="btn_retry">पुनः प्रयास करें</string>
+    <string name="offline_notice">आप ऑफ़लाइन हैं — कैश्ड खबरें दिखाई जा रही हैं</string>
+    <string name="loading">लोड हो रहा है...</string>
+
+    <!-- More / Settings -->
+    <string name="more_about_title">हमारे बारे में</string>
+    <string name="more_about_desc">न्यूज़ 4 लाइव हिंदी का एक अग्रणी डिजिटल समाचार पोर्टल है जो देश, दुनिया, राज्य, धर्म और खेल से जुड़ी ताज़ा खबरें आप तक पहुंचाता है।</string>
+    <string name="more_contact">संपर्क करें</string>
+    <string name="more_privacy">गोपनीयता नीति (Privacy Policy)</string>
+    <string name="more_terms">नियम और शर्तें (Terms)</string>
+    <string name="more_disclaimer">अस्वीकरण (Disclaimer)</string>
+    <string name="more_rate">ऐप को रेट करें</string>
+    <string name="more_share_app">मित्रों के साथ शेयर करें</string>
+    <string name="more_notifications">सूचनाएं (Notifications)</string>
+    <string name="more_theme">थीम (डार्क / लाइट मोड)</string>
+    <string name="theme_system">सिस्टम डिफ़ॉल्ट</string>
+    <string name="theme_light">लाइट मोड</string>
+    <string name="theme_dark">डार्क मोड</string>
+    <string name="app_version">वर्जन %1$s</string>
+
+    <!-- Share Strings -->
+    <string name="share_text_template">%1$s\n\n📖 पूरा पढ़ने के लिए क्लिक करें: %2$s\n\n📲 News 4 Live ऐप डाउनलोड करें:\nhttps://apkpure.com/p/com.news4live.app</string>
+    <string name="share_app_text">ताज़ा और निष्पक्ष हिंदी खबरों के लिए News 4 Live ऐप डाउनलोड करें:\nhttps://apkpure.com/p/com.news4live.app</string>
+
+    <!-- Push Notification Channels -->
+    <string name="channel_breaking_news_name">ब्रेकिंग न्यूज़</string>
+    <string name="channel_breaking_news_desc">महत्वपूर्ण और ताज़ा खबरों की तत्काल सूचना</string>
+    <string name="channel_daily_digest_name">दैनिक मुख्य समाचार</string>
+    <string name="channel_daily_digest_desc">दिनभर की प्रमुख खबरों का सारांश</string>
+
+    <!-- Trust & Verification Badges -->
+    <string name="trust_section_title">ऐप विशेषताएं</string>
+    <string name="trust_secure">100% सुरक्षित और वायरस मुक्त</string>
+    <string name="trust_superfast">सुपरफ़ास्ट — सिर्फ 5 MB</string>
+    <string name="trust_offline">ऑफ़लाइन पढ़ें — बिना इंटरनेट</string>
+    <string name="trust_made_in_india">Made in India 🇮🇳</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Indian Editorial Colors -->
+    <color name="primary_red">#D32F2F</color>
+    <color name="primary_red_dark">#9A0007</color>
+    <color name="primary_red_light">#FF6659</color>
+    
+    <color name="secondary_navy">#1A237E</color>
+    <color name="secondary_navy_light">#534BAE</color>
+    
+    <color name="accent_gold">#FFB300</color>
+    <color name="breaking_red">#E53935</color>
+    
+    <!-- Light Mode Neutrals -->
+    <color name="bg_light">#FAFAFA</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#F5F5F5</color>
+    <color name="text_primary_light">#1F1F1F</color>
+    <color name="text_secondary_light">#616161</color>
+    <color name="divider_light">#E0E0E0</color>
+
+    <!-- Dark Mode Neutrals -->
+    <color name="bg_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="surface_variant_dark">#2A2A2A</color>
+    <color name="text_primary_dark">#EEEEEE</color>
+    <color name="text_secondary_dark">#9E9E9E</color>
+    <color name="divider_dark">#333333</color>
+</resources>
